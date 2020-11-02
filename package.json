@@ -5,8 +5,7 @@
   "repository": "git@github.com:ismaelai/metallica-monorepo.git",
   "author": "Ismael Gonzalez <ismamontiel@hotmail.com>",
   "license": "MIT",
-  "private": true
-  }
+  "private": true,
   "devDependencies": {
     "lerna": "^3.22.1"
   },
