@@ -11,15 +11,15 @@
  Ariel, Jeferson and Ismael from SEI-ES 01.
   
 ## TECHNOLOGIES USED
-- Node.js
-- Express
-- MongoDb
-- React
+![MongoDB](https://img.shields.io/badge/mongo-DB-yellowgreen)
+![Express](https://img.shields.io/badge/-express-grey)
+![React](https://img.shields.io/badge/-react-blue)
+![NodeJS](https://img.shields.io/badge/node-.js-green)
 
 ## HOW TO RUN
 
-1- Clone repository
-2- Click URL link.
+- Clone repository
+- Click URL link.
 
 ## CHALLENGES
 
@@ -30,3 +30,5 @@ Overall, due to the logic that we have already came up was not ideal to do CRUD 
 
 
 ## WIREFRAMES
+![img](album-1.png)
+![img](WIREFRAME2.png)
