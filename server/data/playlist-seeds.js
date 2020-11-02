@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 import { databaseURI } from '../index.js';
 import playlist from './playlist.js';
 
-import Playlist, { getAllPlaylist } from '../models/playlist.js';
+import Playlist from '../models/playlist.js';
 
 mongoose.connect(databaseURI, {
   useFindAndModify: false,

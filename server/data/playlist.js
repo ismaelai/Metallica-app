@@ -1,9 +1,7 @@
 const playlist = [
   {
-    userName: String,
-    favoriteTracks: [{}],
-    // previewLink: String,
-    // addToFavorite: Boolean,
+    userName: 'Ismael',
+    favoriteTracks: [],
   },
 ];
 
