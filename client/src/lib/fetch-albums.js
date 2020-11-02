@@ -11,10 +11,13 @@ export const getAlbumById = async (id) => {
 };
 
 export const getAlbumsByIds = async (albumsIds) => {
-  const notRepitedAlbum = [...new Set(albumsIds)];
-  const albums = await Promise.all(
-    notRepitedAlbum.map(async (id) => await getAlbumById(id)),
-  );
-  console.log({ albums });
-  return albums;
+  if (albumsIds.length > 0) {
+    const notRepitedAlbum = [...new Set(albumsIds)];
+    const albums = await Promise.all(
+      notRepitedAlbum.map(async (id) => await getAlbumById(id)),
+    );
+    return albums;
+  } else {
+    return [];
+  }
 };
