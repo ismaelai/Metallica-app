@@ -1,0 +1,47 @@
+header {
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem;
+  padding-top: 2rem;;
+  //background-color: black;
+  position: fixed;
+    h1  {
+    .logo {
+      margin: 0 auto;
+      width: 25vw;
+      position: fixed;
+      top: 2vh;
+      right: 35vw;
+    }
+  }
+    nav {
+      ul {
+        display: flex;
+        flex-direction: row;
+        
+        li {
+          margin-right: 1rem;
+          list-style: none;
+          .links {
+            margin-right: 2rem;
+            color: orange;
+            text-decoration: none;
+            font-family: 'Oswald', sans-serif;
+            font-weight: normal;
+            background-color: black;
+             padding: 0.25rem 1rem;
+             border-radius: 0.5rem;
+            &:hover {
+              color: black;
+              background-color: orange;
+              padding: 0.25rem 1rem;
+              border-radius: 0.5rem;
+            }
+        }
+        }
+      }
+    }
+}
+

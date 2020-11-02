@@ -1,0 +1,17 @@
+{
+  "name": "metallica-monorepo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:ismaelai/metallica-monorepo.git",
+  "author": "Ismael Gonzalez <ismamontiel@hotmail.com>",
+  "license": "MIT",
+  "private": true
+  }
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  },
+  "workspaces": [
+    "server",
+    "client"
+  ]
+}

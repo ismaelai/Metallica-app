@@ -1,0 +1,22 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:ismaelai/metallica-project.git",
+  "author": "Ismael Gonzalez <ismamontiel@hotmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn nodemon ./index.js",
+    "seedPlaylist": "node ./data/playlist-seeds.js",
+    "seedAlbums": "node ./data/albums-seeds.js"
+  },
+  "type": "module",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.11",
+    "nodemon": "^2.0.6",
+    "winston": "^3.3.3"
+  }
+}

@@ -1,0 +1,12 @@
+.error {
+  min-height: 80vh;
+  flex: 1 auto;
+  padding: 0 1.25rem;
+  animation: flash 1s infinite alternate linear;
+  }
+@keyframes flash {
+  to {
+    background-color: red;
+    color: white;
+  }
+}

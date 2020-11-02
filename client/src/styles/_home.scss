@@ -1,0 +1,184 @@
+.home{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+  color: white;
+  background-image: url('../assets/backgrounds/blue_flames2.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+      .left {
+            width: 15vw;
+            min-height: 10vh;
+            background-color: rgba(122, 120, 126, 0.3);
+            border-radius: 0.5rem;
+            padding: 0.25rem;
+            display: flex;
+            align-items: center;
+            h4 {
+              font-size: 1rem;
+              font-weight: normal;
+              text-align: center;
+              font-family: 'Oswald', sans-serif;
+            }
+      }
+      .wrapper-album {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+          max-width: 60vw;
+          min-height: 90vh;
+          background-color: rgba(32, 12, 73, 0.5);
+          border-radius: 0.5rem;
+          margin-top: 15vh;
+          .album {
+                max-width: 15vw;
+                min-height: 35vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: baseline;
+                align-items: center;
+                padding: 1rem 1rem;
+                .favorite {
+                 background-color: transparent;
+                  color: rgba(255, 255, 255, 0.4);
+                  padding: 0.5rem;
+                  font-family: 'Oswald', sans-serif;
+                  font-weight: normal;
+                  border-radius: 0.5rem;
+                  border: 1px solid  rgba(255, 255, 255, 0.4);
+                  margin-bottom: 1rem;
+                  &:hover {
+                    color: rgba(255, 255, 255, 1);
+                    border: 1px solid  rgba(255, 255, 255, 1);
+                  }
+                  &:active {
+                    color: rgba(255, 255, 255, 1);
+                    border: 1px solid  rgba(255, 255, 255, 1);
+                    background-color: orange;
+                  }
+                }
+                .pict {
+                  min-width: 12vw;
+                  min-height: 12vw;
+                  padding: 0.25rem;
+                  border-radius: 0.5rem;
+                  &.kill-em-all {
+                    background-image: url('../assets/albums/killem_all.png');
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                  }
+                  &.ride-the-lightning {
+                    background-image: url('../assets/albums/ride_lightning.png');
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                  }
+                  &.master-of-puppets {
+                    background-image: url('../assets/albums/master.png');
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                  }
+                  &.metallica {
+                    background-image: url('../assets/albums/black.png');
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                  }
+                  &.load {
+                    background-image: url('../assets/albums/load.png');
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                  }
+                  &.reload {
+                    background-image: url('../assets/albums/reload.png');
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                  }
+                  &.garage-inc {
+                    background-image: url('../assets/albums/garage_inc.png');
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                  }
+                  &.s-and-m {
+                    background-image: url('../assets/albums/s&m.png');
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                  }
+                  &.st-anger {
+                    background-image: url('../assets/albums/st_anger.png');
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                  }
+                  &.death-magnetic {
+                    background-image: url('../assets/albums/death_magnetic.png');
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                  }
+                  &.hardwired {
+                    background-image: url('../assets/albums/hardwired.png');
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                  }
+                }
+                    h5 {
+                      padding: 0;
+                      margin: 0;
+                      margin-top: 0.5rem;
+                      font-family: 'Oswald', sans-serif;
+                      font-weight: 300;
+                      }
+          }
+            }
+      .right {
+                    width: 15vw;
+                    min-height: 10vh;
+                    background-color: rgba(122, 120, 126, 0.3);
+                    border-radius: 0.5rem;
+                    padding: 0.25rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    h4 {
+                      font-size: 1rem;
+                      text-align: center;
+                      font-family: 'Oswald', sans-serif;
+                      font-weight: normal;
+                    }
+                    .go {
+                      margin-left: 1rem;
+                      background-color: black;
+                      color: rgba(255, 255, 255, 0.5);
+                      border: 2px solid  rgba(255, 255, 255, 0.5);
+                      border-radius: 50%;
+                      min-width: 2rem;
+                      min-height: 2rem;
+                      text-align: center;
+                      vertical-align: sub;
+                      text-decoration: none;
+                      padding-top: 0.33rem;
+                      &:hover {
+                      color: rgba(255, 255, 255, 1);
+                      border: 2px solid  rgba(255, 255, 255, 1);
+                      }
+                      &:active {
+                      color: rgba(255, 255, 255, 1);
+                      border: 2px solid  rgba(255, 255, 255, 1);
+                      background-color: orange;
+                      }
+                    }
+      }
+    }    

@@ -1,0 +1,13 @@
+.collection{
+    display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+  color: white;
+  background-image: url('../assets/backgrounds/blue_flames.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}

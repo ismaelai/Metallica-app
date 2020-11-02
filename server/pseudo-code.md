@@ -1,0 +1,33 @@
+#Pseudo code
+- [x] Establecer `yarn scripts` para inicialización del servidor
+- [x] Instalar las siguientes dependencias:
+  - Express
+  - Body parser
+  - Nodemon
+  - Winston
+  - Dotenv
+  - Node fetch
+- [x] Crear un archivo `index`
+- [x] Crear un servidor usando express en el archivo `index`
+- [x] Crear una carpeta llamada `lib`
+- [x] Dentro de `lib crear un logger
+- [x] Crear una carpeta llamada `middleware` que contenga los middlewares para:
+  - Logger
+  - Que las respuestas salgan en formato **JSON**
+- [x] Decirle al servidor que serialice las peticiones a JSON usando `body-parser`
+- [x] Decirle al servidor que use los middleware anteriormente descritos
+- [x] Setear `host` y `port`
+- [x] Crear base de datos: 
+- [x] -crear archivo data que contine los recursos de album y playlist.
+- [x] -crear albums seeds y playlist seeds.
+- [x] Crear un directorio llamado **routes** y dentro crear un archivo con el nombre del recurso `album-routes y playlist-routes` y adentro del archivo crear la rutas
+- [x] Crear un directorio llamado **controllers** y dentro crear un archivo con el nombre del recurso `albums y playlist` y adentro del archivo crear los controladores
+- [x] Crear un directorio llamado **models** y dentro crear un archivo con el nombre del recurso `albums y playlist` y adentro los modelos mongoose schema y  los archivos  del modelo que manejara las peticiones a los API
+- [x] Decirle a git que no registre el archivo `.env`
+- [x] Usando la libreria `dotenv` para las variables de entorno
+- [x] Crear un repositorio monorepo
+- [x] Crear create-react-app para el lado del cliente
+- [x] Hacer el fetch de la data
+- [x] Crear componentes y las paginas del enrutamiento
+- [x] Usar sass para aplicar estilos
+- [x] Devolver la data al cliente
