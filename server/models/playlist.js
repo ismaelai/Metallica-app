@@ -1,25 +1,21 @@
 import mongoose from 'mongoose';
 
-const playlistSchema = new mongoose.Schema(
- {
-    userName: String,
-    favoriteTracks: [
-        {
-          title: String,
-          album: String,
-          duration: String,
-          format: String,
-          preview: {
-            soundCloudPlayer: String,
-            soundCloudUser: String,
-            soundCloudSong: String,
-          }
-        }
-    ]
-   
-  },
-    
-);
+const playlistSchema = new mongoose.Schema({
+  userName: String,
+  favoriteTracks: [
+    {
+      title: String,
+      album: String,
+      duration: String,
+      format: String,
+      preview: {
+        soundCloudPlayer: String,
+        soundCloudUser: String,
+        soundCloudSong: String,
+      },
+    },
+  ],
+});
 
 const Playlist = mongoose.model('Playlist', playlistSchema);
 export default Playlist;
@@ -63,5 +59,3 @@ export const deletePlaylistResource = async (id) => {
     throw new Error(error);
   }
 };
-
-

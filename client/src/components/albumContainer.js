@@ -1,6 +1,4 @@
 const AlbumContainer = () => {
-
-
   return (
     <div>
       <form className="wrapper-album">
