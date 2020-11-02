@@ -22,15 +22,7 @@ const Home = () => {
         </div>
 
         <section>
-          <form>
-            {albums.map((album, i) => {
-              return (
-                <article key={i}>
-                  <h5>{album.name}</h5>
-                </article>
-              );
-            })}
-          </form>
+          <AlbumContainer albums={albums} />
         </section>
 
         <div className="right">
