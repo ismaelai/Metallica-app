@@ -5,6 +5,16 @@ export const getAllAlbums = async () => {
   return await response.json();
 };
 
+export const getAlbumById = async (id) => {
+  const response = await fetch(`${REACT_APP_SERVER_URL}/albums/${id}`);
+  return await response.json();
+};
+
 export const getAlbumsByIds = async (albumsIds) => {
-  console.log({ albumsIds });
+  const notRepitedAlbum = [...new Set(albumsIds)];
+  const albums = await Promise.all(
+    notRepitedAlbum.map(async (id) => await getAlbumById(id)),
+  );
+  console.log({ albums });
+  return albums;
 };

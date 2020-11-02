@@ -3,12 +3,13 @@ import { getAlbumsByIds } from '../lib/fetch-albums.js';
 import { useLocalStorage } from '../lib/local-storage-hook.js';
 
 const Collection = () => {
-  const [collection, setCollection] = useLocalStorage('userCollection', []);
+  const [collection, _setCollection] = useLocalStorage('userCollection', []);
 
   const [albums, setAlbums] = useState([]);
 
   const fetchAlbums = async () => {
-    await getAlbumsByIds(collection);
+    const albumsData = await getAlbumsByIds(collection);
+    setAlbums(albumsData);
   };
 
   useEffect(() => {
@@ -20,8 +21,12 @@ const Collection = () => {
       <h2>Collection page</h2>
 
       <section>
-        {collection.map((collectionItem, i) => {
-          return <h5 key={i}>{collectionItem}</h5>;
+        {albums.map((album) => {
+          return (
+            <article key={album._id}>
+              <h3>{album.name}</h3>
+            </article>
+          );
         })}
       </section>
     </main>
