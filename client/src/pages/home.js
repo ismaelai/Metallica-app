@@ -6,8 +6,8 @@ const Home = () => {
   const [albums, setAlbums] = useState([]);
 
   const fetchAllAlbums = async () => {
-    const allbumsData = await getAllAlbums();
-    setAlbums(allbumsData);
+    const albumsData = await getAllAlbums();
+    setAlbums(albumsData);
   };
 
   useEffect(() => {
@@ -21,9 +21,9 @@ const Home = () => {
           <h4>CHOOSE ALBUMS TO START YOUR FAVOURITE COLLECTION:</h4>
         </div>
 
-        <section>
+        <div className="wrapper-album">
           <AlbumContainer albums={albums} />
-        </section>
+        </div>
 
         <div className="right">
           <h4>GO TO COLLECTION</h4>

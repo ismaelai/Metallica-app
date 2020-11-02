@@ -15,12 +15,14 @@ const AlbumContainer = ({ albums }) => {
   return (
     <>
       {albums.map((album) => {
+        console.log(album)
         return (
-          <article key={album._id}>
-            <h5>{album.name}</h5>
-            <button onClick={handleClick} id={album._id}>
+          <article key={album._id} className="album">
+            <button onClick={handleClick} id={album._id} className="favorite">
               Add Collections
             </button>
+            <div className={album.className}></div>
+            <h4>{album.name}</h4>
           </article>
         );
       })}
