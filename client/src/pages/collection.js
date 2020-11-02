@@ -11,16 +11,14 @@ const Collection = () => {
   const fetchAlbums = async () => {
     const albumsData = await getAlbumsByIds(collection);
     setAlbums(albumsData);
-    console.log({ albums });
   };
 
   const handleClick = (event) => {
-    const index = albums.findIndex(x => x.name === event.target.innerHTML)
-    console.log(index)
-    setAlbumToRender(index)
-    setisClicked(true)
-    console.log(albumToRenderIndex)
-  }
+     event.preventDefault();
+     const index = albums.findIndex((x) => x.name === event.target.innerHTML);
+     setAlbumToRender(index);
+     setisClicked(true);
+   };
 
   useEffect(() => {
     fetchAlbums();
@@ -39,7 +37,11 @@ const Collection = () => {
         </div>
         {albums.map((album) => {
           return (
-            <article onClick={handleClick} key={album._id}>
+            <article
+              key={album._id}
+              onClick={handleClick}
+              className="album-row"
+            >
               <h3>{album.name}</h3>
               <h3>{album.year}</h3>
               <button type="submit" className="favorite">
@@ -51,12 +53,12 @@ const Collection = () => {
             </article>
           );
         })}
-        {isClicked &&
-        <>
-          <h1>{albums[albumToRenderIndex].name}</h1>
-          <h2>{albums[albumToRenderIndex].year}</h2>
-        </> 
-        }
+        {isClicked && (
+          <>
+            <h1>{albums[albumToRenderIndex].name}</h1>
+            <h2>{albums[albumToRenderIndex].year}</h2>
+          </>
+        )}
       </section>
       <div className="right"></div>
     </main>

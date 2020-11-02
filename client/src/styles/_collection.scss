@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   min-height: 100vh;
   color: white;
   background-image: url('../assets/backgrounds/blue_flames.png');
@@ -13,17 +13,17 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 15vw;
-      background-color: rgba(122, 120, 126, 0.7);
+      min-width: 10vw;
+      background-color: rgba(134, 133, 131, 0.479);
       border-radius: 0.5rem;
       padding: 0.25rem;
+      margin-top: 15vh;
         h3 {
-          color: black;
+          color: orange;
           font-size: 1.25rem;
           text-align: center;
-          font-family: 'Oswald', sans-serif;
           font-weight: normal;
-          padding: 0.5rem;
+          font-family: 'Oswald', sans-serif;
           margin: 0;
         }
         h4 {
@@ -40,8 +40,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        min-width: 60vw;
-        background-color: rgba(134, 133, 131, 0.527);
+        min-width: 80vw;
+        background-color: rgba(134, 133, 131, 0.349);
         border-radius: 0.5rem;
         padding: 2rem 1rem;
         margin-top: 15vh;
@@ -52,7 +52,7 @@
           align-items: center;
           min-width: 53vw;
           padding:  0 1rem;
-          margin-bottom: 1rem;
+          margin-bottom: 2rem;
           h3 {
             min-width: 20vw;
             font-size: 1rem;
