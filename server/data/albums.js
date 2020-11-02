@@ -1,4 +1,5 @@
 const albums = [
+  //objeto KIll em all
   {
     name: 'Kill`Em All ',
     year: 1983,
@@ -8,6 +9,7 @@ const albums = [
       'Ron McGovney - bass',
       'Lars Ulrich – Drums',
     ],
+    className: 'kill-em-all',
     tracks: [
       {
         title: 'Hit The Lights',
@@ -22,6 +24,7 @@ const albums = [
             'https://soundcloud.com/scottrek-160/metallica-hit-the-lights',
         },
       },
+
       {
         title: 'The Four Horsemen',
         album: 'Kill`Em All',
@@ -112,6 +115,7 @@ const albums = [
           soundCloudSong: 'https://soundcloud.com/ewaters70/no-remorse',
         },
       },
+
       {
         title: 'Seek & Destroy',
         album: 'Kill`Em All',
@@ -141,6 +145,7 @@ const albums = [
       },
     ],
   },
+  //objeto Ride The Lightning
   {
     name: 'Ride The Lightning ',
     year: 1984,
@@ -150,6 +155,7 @@ const albums = [
       'Cliff Burton – bass',
       'Lars Ulrich – Drums',
     ],
+    className: 'ride-the-lightning',
     tracks: [
       {
         title: 'Fight Fire With Fire',
@@ -258,10 +264,12 @@ const albums = [
       },
     ],
   },
+  //objeto Master Of Puppets
   {
     name: 'Master Of Puppets',
     year: 1986,
     bandMembers: ['James Hetfield – Guitar Vocals ', 'Lars Ulrich – Drums'],
+    className: 'master-of-puppets',
     tracks: [
       {
         title: 'Battery',
@@ -339,7 +347,7 @@ const albums = [
           soundCloudSong: '',
         },
       },
-      -{
+      {
         title: 'Orion',
         album: 'Master Of Puppers',
         duration: '8:27',
@@ -363,6 +371,115 @@ const albums = [
       },
     ],
   },
+  //objeto And Justice for all
+  {
+    name: '..And Justice For All ',
+    year: 1988,
+    bandMembers: [],
+    className: 'and-justice-for-all',
+    tracks: [
+      {
+        title: 'Blackened',
+        album: '..And Justice For All ',
+        duration: '6:41',
+        format: 'mp3',
+        preview: {
+          soundCloudPlayer: '',
+          soundCloudUser: '',
+          soundCloudSong: '',
+        },
+      },
+      {
+        title: '..And Justice for All',
+        album: '..And Justice For All ',
+        duration: '9:47',
+        format: 'mp3',
+        preview: {
+          soundCloudPlayer: '',
+          soundCloudUser: '',
+          soundCloudSong: '',
+        },
+      },
+      {
+        title: 'Eye of the Beholder',
+        album: '..And Justice For All ',
+        duration: '6:30',
+        format: 'mp3',
+        preview: {
+          soundCloudPlayer: '',
+          soundCloudUser: '',
+          soundCloudSong: '',
+        },
+      },
+      {
+        title: 'One',
+        album: '..And Justice For All ',
+        duration: '7:27',
+        format: 'mp3',
+        preview: {
+          soundCloudPlayer: '',
+          soundCloudUser: '',
+          soundCloudSong: '',
+        },
+      },
+      {
+        title: 'The Shortest Straw',
+        album: '..And Justice For All ',
+        duration: '6:36',
+        format: 'mp3',
+        preview: {
+          soundCloudPlayer: '',
+          soundCloudUser: '',
+          soundCloudSong: '',
+        },
+      },
+      {
+        title: 'Harvester of Sorrow',
+        album: '..And Justice For All ',
+        duration: '5:46',
+        format: 'mp3',
+        preview: {
+          soundCloudPlayer: '',
+          soundCloudUser: '',
+          soundCloudSong: '',
+        },
+      },
+      {
+        title: 'The Frayed Ends of Sanity',
+        album: '..And Justice For All ',
+        duration: '7:44',
+        format: 'mp3',
+        preview: {
+          soundCloudPlayer: '',
+          soundCloudUser: '',
+          soundCloudSong: '',
+        },
+      },
+      {
+        title: 'To Live Is to Die',
+        album: '..And Justice For All ',
+        duration: '9:49',
+        format: 'mp3',
+        preview: {
+          soundCloudPlayer: '',
+          soundCloudUser: '',
+          soundCloudSong: '',
+        },
+      },
+      {
+        title: 'Dyers Eve',
+        album: '..And Justice For All ',
+        duration: '5:13',
+        format: 'mp3',
+        preview: {
+          soundCloudPlayer: '',
+          soundCloudUser: '',
+          soundCloudSong: '',
+        },
+      },
+    ],
+  },
+  //objeto Metallica
   {
     name: 'Metallica',
     year: 1991,
@@ -373,6 +490,7 @@ const albums = [
       'Kirk Hammett – Guitar',
       'Jason Newsted – Bass',
     ],
+    className: 'metallica',
     tracks: [
       {
         title: 'Enter Sadman',
@@ -528,6 +646,7 @@ const albums = [
       },
     ],
   },
+  //objeto Load
   {
     name: 'Load',
     year: 1996,
@@ -537,6 +656,7 @@ const albums = [
       'Kirk Hammett – Lead and rhythm guitar',
       'Jason Newsted – Bass',
     ],
+    className: 'load',
     tracks: [
       {
         title: 'Áin´t My Bich',
@@ -721,10 +841,17 @@ const albums = [
       },
     ],
   },
+  //objeto Reload
   {
     name: 'Reload',
     year: 1997,
-    bandMembers: [],
+    bandMembers: [
+      'James Hetfield – Guitar Vocals - Rhythm Guitar',
+      'Kirk Hammett - lead guitar ',
+      'Cliff Burton – bass',
+      'Lars Ulrich – Drums',
+    ],
+    className: 'reload',
     tracks: [
       {
         title: 'Fuel',
@@ -732,20 +859,23 @@ const albums = [
         duration: '4:30',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/13479100&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/jamesdhardy33',
+          soundCloudSong:
+            'https://soundcloud.com/jamesdhardy33/metallica-fuel-1',
         },
       },
       {
         title: 'The Memory Remains',
         album: 'Reload',
-        duration: '439:',
+        duration: '4:39:',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/34883991&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/cmbv1982',
+          soundCloudSong: 'https://soundcloud.com/cmbv1982/the-memory-remains',
         },
       },
       {
@@ -754,9 +884,11 @@ const albums = [
         duration: '5:19',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/169723748&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/thibaut-bynens',
+          soundCloudSong:
+            'https://soundcloud.com/thibaut-bynens/metallica-devils-dance-cover',
         },
       },
       {
@@ -765,9 +897,11 @@ const albums = [
         duration: '6:36',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/86223294&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/kilin-blanco',
+          soundCloudSong:
+            'https://soundcloud.com/kilin-blanco/the-unforgiven-ii-metallica',
         },
       },
       {
@@ -776,9 +910,11 @@ const albums = [
         duration: '5:22',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/169802141&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/ajs-ajijayasakti',
+          soundCloudSong:
+            'https://soundcloud.com/ajs-ajijayasakti/metallica-better-than-you-ajs',
         },
       },
       {
@@ -787,9 +923,11 @@ const albums = [
         duration: '5:13',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/107155192&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/ricky-shigematsu',
+          soundCloudSong:
+            'https://soundcloud.com/ricky-shigematsu/faixa-1-slither-velvet',
         },
       },
       {
@@ -798,9 +936,11 @@ const albums = [
         duration: '6:12',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/206734644&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/officialmetallica',
+          soundCloudSong:
+            'https://soundcloud.com/officialmetallica/carpe-diem-baby-live-july-6',
         },
       },
       {
@@ -809,9 +949,12 @@ const albums = [
         duration: '4:05',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/411179820&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser:
+            'https://soundcloud.com/five-finger-death-punch-official',
+          soundCloudSong:
+            'https://soundcloud.com/five-finger-death-punch-official/bad-seed',
         },
       },
       {
@@ -820,9 +963,11 @@ const albums = [
         duration: '6:53',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/3283027&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/sin55',
+          soundCloudSong:
+            'https://soundcloud.com/sin55/sin55-where-the-wild-things-are',
         },
       },
       {
@@ -831,9 +976,10 @@ const albums = [
         duration: '6:05',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/51114709&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/thesignatureseries',
+          soundCloudSong: 'https://soundcloud.com/thesignatureseries/e-major',
         },
       },
       {
@@ -842,9 +988,11 @@ const albums = [
         duration: '7:36',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/99724436&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/george-miadis',
+          soundCloudSong:
+            'https://soundcloud.com/george-miadis/low-mans-lyric-original-by',
         },
       },
       {
@@ -853,9 +1001,11 @@ const albums = [
         duration: '5:17',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/91569521&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/danu-benzema',
+          soundCloudSong:
+            'https://soundcloud.com/danu-benzema/sets/metallica-attitude',
         },
       },
       {
@@ -864,145 +1014,182 @@ const albums = [
         duration: '8:15',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/17769027&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/taylor-ross',
+          soundCloudSong:
+            'https://soundcloud.com/taylor-ross/metallica-fixxxer',
         },
       },
     ],
   },
+  //objeto Garage Inc
   {
     name: 'Garage Inc',
     year: 1998,
-    bandMembers: [],
+    bandMembers: [
+      'James Hetfield – Guitar Vocals - Rhythm Guitar',
+      'Kirk Hammett - lead guitar ',
+      'Cliff Burton – bass',
+      'Lars Ulrich – Drums',
+    ],
+    className: 'garage-inc',
     tracks: [
       {
         title: 'Free Speech For The Dumb',
         album: 'Garage Inc',
-        duration: ':',
+        duration: '7:30',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/849282061&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/deafkidsofficial',
+          soundCloudSong:
+            'https://soundcloud.com/deafkidsofficial/free-speech-for-the-dumb',
         },
       },
       {
         title: 'It`s Electric',
         album: 'Garage Inc',
-        duration: ':',
+        duration: '7:30',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/169802143&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/ajs-ajijayasakti',
+          soundCloudSong:
+            'https://soundcloud.com/ajs-ajijayasakti/metallica-its-electric-ajs',
         },
       },
       {
         title: 'Sabbra Cadabra',
         album: 'Garage Inc',
-        duration: ':',
+        duration: '6:21',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/57276892&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/shittynightcore',
+          soundCloudSong:
+            'https://soundcloud.com/shittynightcore/sabbra-cadabra-metallica',
         },
       },
       {
         title: 'Turn The Page',
         album: 'Garage Inc',
-        duration: ':',
+        duration: '6:06',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/4198303&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/toprakebron',
+          soundCloudSong:
+            'https://soundcloud.com/toprakebron/metallica-turn-the-page',
         },
       },
       {
         title: 'Die Die My Darling',
         album: 'Garage Inc',
-        duration: ':',
+        duration: '2:31',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/128985415&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/spyroskakalis',
+          soundCloudSong:
+            'https://soundcloud.com/spyroskakalis/die-die-my-darling-metallica',
         },
       },
       {
         title: 'Loverman',
         album: 'Garage Inc',
-        duration: ':',
+        duration: '3:00',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/76734796&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/goddamndevil420',
+          soundCloudSong:
+            'https://soundcloud.com/goddamndevil420/loverman-metallica-minicover',
         },
       },
       {
         title: 'Mercyful Fate',
         album: 'Garage Inc',
-        duration: ':',
+        duration: '11:11',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/223905546&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/corey-sheehan-52322905',
+          soundCloudSong:
+            'https://soundcloud.com/corey-sheehan-52322905/metallica-mercyful-fate',
         },
       },
       {
         title: 'Tuesday`s Gone',
         album: 'Garage Inc',
-        duration: ':',
+        duration: '8:49',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/186491331&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/r3hl',
+          soundCloudSong: 'https://soundcloud.com/r3hl/tuesdays-gone-metallica',
         },
       },
       {
-        title: 'Astronomy ',
+        title: 'Astronomy',
         album: 'Garage Inc',
-        duration: ':',
+        duration: '6:34',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/269329835&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/user-854535178',
+          soundCloudSong:
+            'https://soundcloud.com/user-854535178/metallica-astronomy-cover-not-vocal',
         },
       },
       {
         title: 'Whiskey In The Jar',
         album: 'Garage Inc',
-        duration: ':',
+        duration: '5:24',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/143355525&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/marco-andrade-27',
+          soundCloudSong:
+            'https://soundcloud.com/marco-andrade-27/metallica-whiskey-in-the-jar',
         },
       },
       {
         title: 'The More I See',
         album: 'Garage Inc',
-        duration: ':',
+        duration: '4:37',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/250383559&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/hollowox-2',
+          soundCloudSong:
+            'https://soundcloud.com/hollowox-2/metallica-the-more-i-see-bass-cover',
         },
       },
     ],
   },
+  //objeto S&M
   {
     name: 'S&M',
     year: 1999,
-    bandMembers: [],
+    bandMembers: [
+      'James Hetfield – Guitar Vocals - Rhythm Guitar',
+      'Kirk Hammett - lead guitar ',
+      'Cliff Burton – bass',
+      'Lars Ulrich – Drums',
+    ],
+    className: 's-and-m',
     tracks: [
       {
         title: 'The Ecstasy of Gold',
@@ -1010,9 +1197,11 @@ const albums = [
         duration: '2:31',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/22565671&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/djcestah',
+          soundCloudSong:
+            'https://soundcloud.com/djcestah/metallica-s-m-live-the-ecstasy',
         },
       },
       {
@@ -1021,9 +1210,11 @@ const albums = [
         duration: '9:34',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/86443656&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/rdamaya',
+          soundCloudSong:
+            'https://soundcloud.com/rdamaya/metallica-the-call-of-ktulu',
         },
       },
       {
@@ -1032,9 +1223,11 @@ const albums = [
         duration: '8:55',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/837247036&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/piero-pianazzi',
+          soundCloudSong:
+            'https://soundcloud.com/piero-pianazzi/master_of_puppetsmetallica-drum-cover',
         },
       },
       {
@@ -1043,9 +1236,11 @@ const albums = [
         duration: '4:19',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/29388528&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/meljinleouf',
+          soundCloudSong:
+            'https://soundcloud.com/meljinleouf/of-wolf-and-man-metallica',
         },
       },
       {
@@ -1054,9 +1249,11 @@ const albums = [
         duration: '7:27',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/206734444&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/officialmetallica',
+          soundCloudSong:
+            'https://soundcloud.com/officialmetallica/the-thing-that-should-not-be',
         },
       },
       {
@@ -1065,9 +1262,10 @@ const albums = [
         duration: '4:36',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/19646994&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/davidbrittojr',
+          soundCloudSong: 'https://soundcloud.com/davidbrittojr/fuel-metallica',
         },
       },
       {
@@ -1076,9 +1274,10 @@ const albums = [
         duration: '4:42',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/34883991&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/cmbv1982',
+          soundCloudSong: 'https://soundcloud.com/cmbv1982/the-memory-remains',
         },
       },
       {
@@ -1087,9 +1286,11 @@ const albums = [
         duration: '5:43',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/270420143&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/hamzeh-alizadeh',
+          soundCloudSong:
+            'https://soundcloud.com/hamzeh-alizadeh/no-leaf-clover-metallica',
         },
       },
       {
@@ -1098,9 +1299,11 @@ const albums = [
         duration: '4:45',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/180860535&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/firedrake090',
+          soundCloudSong:
+            'https://soundcloud.com/firedrake090/metallica-hero-of-the-day',
         },
       },
       {
@@ -1109,9 +1312,11 @@ const albums = [
         duration: '5:26',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/169723748&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/thibaut-bynens',
+          soundCloudSong:
+            'https://soundcloud.com/thibaut-bynens/metallica-devils-dance-cover',
         },
       },
       {
@@ -1120,9 +1325,10 @@ const albums = [
         duration: '9:02',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/101051225&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/ulukol',
+          soundCloudSong: 'https://soundcloud.com/ulukol/bleeding-me-metallica',
         },
       },
       {
@@ -1131,9 +1337,11 @@ const albums = [
         duration: '6:48',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/199013827&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/bee_ell',
+          soundCloudSong:
+            'https://soundcloud.com/bee_ell/metallica-nothing-else-matters',
         },
       },
       {
@@ -1142,9 +1350,11 @@ const albums = [
         duration: '4:30',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/180860527&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/firedrake090',
+          soundCloudSong:
+            'https://soundcloud.com/firedrake090/metallica-until-it-sleeps',
         },
       },
       {
@@ -1153,9 +1363,11 @@ const albums = [
         duration: '4:52',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/252817666&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/thebestofhardmetal',
+          soundCloudSong:
+            'https://soundcloud.com/thebestofhardmetal/metallica-for-whom-the-bell-tolls',
         },
       },
       {
@@ -1164,9 +1376,11 @@ const albums = [
         duration: '4:20',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/267215848&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/user-121447859',
+          soundCloudSong:
+            'https://soundcloud.com/user-121447859/minus-human-metallica-cover',
         },
       },
       {
@@ -1175,9 +1389,11 @@ const albums = [
         duration: '7:01',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/223840663&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/officialmetallica',
+          soundCloudSong:
+            'https://soundcloud.com/officialmetallica/wherever-i-may-roam-live-71',
         },
       },
       {
@@ -1186,9 +1402,11 @@ const albums = [
         duration: '9:59',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/258873015&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/bzacl',
+          soundCloudSong:
+            'https://soundcloud.com/bzacl/outlaw-torn-metallica-cover',
         },
       },
       {
@@ -1197,20 +1415,23 @@ const albums = [
         duration: '5:46',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/225973221&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/officialmetallica',
+          soundCloudSong:
+            'https://soundcloud.com/officialmetallica/sad-but-true-live-september-2',
         },
       },
       {
-        title: 'One ',
+        title: 'One',
         album: 'S&M',
         duration: '7:53',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/56853036&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/gabriel_vasc',
+          soundCloudSong: 'https://soundcloud.com/gabriel_vasc/one-metallica',
         },
       },
       {
@@ -1219,9 +1440,11 @@ const albums = [
         duration: '7:39',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/89789349&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/metal-head0-1',
+          soundCloudSong:
+            'https://soundcloud.com/metal-head0-1/metallica-enter-sandman',
         },
       },
       {
@@ -1230,17 +1453,26 @@ const albums = [
         duration: '7:25',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/11732359&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/prototypeonline',
+          soundCloudSong:
+            'https://soundcloud.com/prototypeonline/battery-metallica',
         },
       },
     ],
   },
+  //objeto St. Anger
   {
     name: 'St. Anger',
     year: 2003,
-    bandMembers: [],
+    bandMembers: [
+      'James Hetfield – Guitar Vocals - Rhythm Guitar',
+      'Kirk Hammett - lead guitar ',
+      'Cliff Burton – bass',
+      'Lars Ulrich – Drums',
+    ],
+    className: 'st-anger',
     tracks: [
       {
         title: 'Frantic',
@@ -1248,9 +1480,11 @@ const albums = [
         duration: '5:50',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/165649459&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/smartsoundqc',
+          soundCloudSong:
+            'https://soundcloud.com/smartsoundqc/metallica-new-frantic',
         },
       },
       {
@@ -1259,9 +1493,11 @@ const albums = [
         duration: '7:21',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/186357184&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/diego-thrasher666',
+          soundCloudSong:
+            'https://soundcloud.com/diego-thrasher666/metallica-st-anger',
         },
       },
       {
@@ -1270,9 +1506,11 @@ const albums = [
         duration: '8:26',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/186068239&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/diego-silva-654',
+          soundCloudSong:
+            'https://soundcloud.com/diego-silva-654/metallica-some-kind-of-monster',
         },
       },
       {
@@ -1281,9 +1519,11 @@ const albums = [
         duration: '5:25',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/186068239&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/diego-silva-654',
+          soundCloudSong:
+            'https://soundcloud.com/diego-silva-654/metallica-some-kind-of-monster',
         },
       },
       {
@@ -1292,9 +1532,11 @@ const albums = [
         duration: '8:30',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/180856267&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/firedrake090',
+          soundCloudSong:
+            'https://soundcloud.com/firedrake090/metallica-invisible-kid',
         },
       },
       {
@@ -1303,9 +1545,11 @@ const albums = [
         duration: '5:46',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/182247814&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/firedrake090',
+          soundCloudSong:
+            'https://soundcloud.com/firedrake090/metallica-my-world',
         },
       },
       {
@@ -1314,9 +1558,11 @@ const albums = [
         duration: '7:10',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/182247836&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/firedrake090',
+          soundCloudSong:
+            'https://soundcloud.com/firedrake090/metallica-shoot-me-again',
         },
       },
       {
@@ -1325,9 +1571,11 @@ const albums = [
         duration: '5:27',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/182247836&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/firedrake090',
+          soundCloudSong:
+            'https://soundcloud.com/firedrake090/metallica-shoot-me-again',
         },
       },
       {
@@ -1336,9 +1584,11 @@ const albums = [
         duration: '7:08',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/180856258&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/firedrake090',
+          soundCloudSong:
+            'https://soundcloud.com/firedrake090/metallica-the-unnamed-feeling',
         },
       },
       {
@@ -1347,9 +1597,11 @@ const albums = [
         duration: '5:14',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/182247806&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/firedrake090',
+          soundCloudSong:
+            'https://soundcloud.com/firedrake090/metallica-purify',
         },
       },
       {
@@ -1358,17 +1610,26 @@ const albums = [
         duration: '8:48',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/177811483&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/firedrake090',
+          soundCloudSong:
+            'https://soundcloud.com/firedrake090/all-within-my-hands-3',
         },
       },
     ],
   },
+  //objeto Death Magnetic
   {
     name: 'Death Magnetic',
     year: 2008,
-    bandMembers: [],
+    bandMembers: [
+      'James Hetfield – Guitar Vocals - Rhythm Guitar',
+      'Kirk Hammett - lead guitar ',
+      'Cliff Burton – bass',
+      'Lars Ulrich – Drums',
+    ],
+    className: 'death-magnetic',
     tracks: [
       {
         title: 'That Was Just Your Life',
@@ -1376,9 +1637,11 @@ const albums = [
         duration: '7:08',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/63233243&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/jluciano85',
+          soundCloudSong:
+            'https://soundcloud.com/jluciano85/metallica-that-was-just-your',
         },
       },
       {
@@ -1387,9 +1650,11 @@ const albums = [
         duration: '7:52',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/130779028&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/allelas',
+          soundCloudSong:
+            'https://soundcloud.com/allelas/metallica-the-end-of-the-line',
         },
       },
       {
@@ -1398,9 +1663,11 @@ const albums = [
         duration: '6:25',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/206734705&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/officialmetallica',
+          soundCloudSong:
+            'https://soundcloud.com/officialmetallica/broken-beat-and-scarred-live',
         },
       },
       {
@@ -1409,9 +1676,11 @@ const albums = [
         duration: '7:56',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/122240498&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/athomuss',
+          soundCloudSong:
+            'https://soundcloud.com/athomuss/the-day-that-never-comes',
         },
       },
       {
@@ -1420,9 +1689,11 @@ const albums = [
         duration: '7:57',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/99015682&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/kuba-kowal',
+          soundCloudSong:
+            'https://soundcloud.com/kuba-kowal/all-nightmare-long-metallica',
         },
       },
       {
@@ -1431,9 +1702,11 @@ const albums = [
         duration: '6:40',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/165275715&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/alexandre-marques-33',
+          soundCloudSong:
+            'https://soundcloud.com/alexandre-marques-33/cyanide-metallica',
         },
       },
       {
@@ -1442,9 +1715,11 @@ const albums = [
         duration: '7:47',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/94027414&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/alfredo-guzman-navarro',
+          soundCloudSong:
+            'https://soundcloud.com/alfredo-guzman-navarro/metallica-the-unforgiven',
         },
       },
       {
@@ -1453,9 +1728,11 @@ const albums = [
         duration: '8:01',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/247270886&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/metal_riffs',
+          soundCloudSong:
+            'https://soundcloud.com/metal_riffs/the-judas-kiss-metallica-quebec-magnetic-hd',
         },
       },
       {
@@ -1464,9 +1741,11 @@ const albums = [
         duration: '9:58',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/78837660&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/robert-scott-30',
+          soundCloudSong:
+            'https://soundcloud.com/robert-scott-30/suicide-and-redemption',
         },
       },
       {
@@ -1475,119 +1754,16 @@ const albums = [
         duration: '5:01',
         format: 'mp3',
         preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
+          soundCloudPlayer:
+            'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/247270993&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
+          soundCloudUser: 'https://soundcloud.com/metal_riffs',
+          soundCloudSong:
+            'https://soundcloud.com/metal_riffs/my-apocalypse-metallica-live-quebec-magnetic',
         },
       },
     ],
   },
-  {
-    name: '..And Justice For All ',
-    year: 1988,
-    bandMembers: [],
-    tracks: [
-      {
-        title: 'Blackened',
-        album: '..And Justice For All ',
-        duration: '6:41',
-        format: 'mp3',
-        preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
-        },
-      },
-      {
-        title: '..And Justice for All',
-        album: '..And Justice For All ',
-        duration: '9:47',
-        format: 'mp3',
-        preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
-        },
-      },
-      {
-        title: 'Eye of the Beholder',
-        album: '..And Justice For All ',
-        duration: '6:30',
-        format: 'mp3',
-        preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
-        },
-      },
-      {
-        title: 'One',
-        album: '..And Justice For All ',
-        duration: '7:27',
-        format: 'mp3',
-        preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
-        },
-      },
-      {
-        title: 'The Shortest Straw',
-        album: '..And Justice For All ',
-        duration: '6:36',
-        format: 'mp3',
-        preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
-        },
-      },
-      {
-        title: 'Harvester of Sorrow',
-        album: '..And Justice For All ',
-        duration: '5:46',
-        format: 'mp3',
-        preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
-        },
-      },
-      {
-        title: 'The Frayed Ends of Sanity',
-        album: '..And Justice For All ',
-        duration: '7:44',
-        format: 'mp3',
-        preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
-        },
-      },
-      {
-        title: 'To Live Is to Die',
-        album: '..And Justice For All ',
-        duration: '9:49',
-        format: 'mp3',
-        preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
-        },
-      },
-      {
-        title: 'Dyers Eve',
-        album: '..And Justice For All ',
-        duration: '5:13',
-        format: 'mp3',
-        preview: {
-          soundCloudPlayer: '',
-          soundCloudUser: '',
-          soundCloudSong: '',
-        },
-      },
-    ],
-  },
+  //objeto Hardwired... to Self-Destruct
   {
     name: 'Hardwired... to Self-Destruct',
     year: 2016,
@@ -1597,6 +1773,7 @@ const albums = [
       'Cliff Burton – bass',
       'Lars Ulrich – Drums',
     ],
+    className: 'hardwired',
     tracks: [
       {
         title: 'Hardwired',
@@ -1757,5 +1934,4 @@ const albums = [
     ],
   },
 ];
-
 export default albums;

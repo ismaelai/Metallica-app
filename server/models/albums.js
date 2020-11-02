@@ -5,6 +5,7 @@ const AlbumsSchema = new mongoose.Schema(
     name: String,
     year: Number,
     bandMembers: [String],
+    className: String,
     tracks: [
       {
         title: String,

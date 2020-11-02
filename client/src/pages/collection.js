@@ -11,6 +11,7 @@ const Collection = () => {
   const fetchAlbums = async () => {
     const albumsData = await getAlbumsByIds(collection);
     setAlbums(albumsData);
+    console.log({ albums });
   };
 
   const handleClick = (event) => {
@@ -26,14 +27,27 @@ const Collection = () => {
   }, []);
 
   return (
-    <main className="collection">
-      <h2>Collection page</h2>
-
-      <section>
+    <main className="container-collection">
+      <div className="left">
+        <h3>USER:</h3>
+        <h4>Username</h4>
+      </div>
+      <section className="wrapper-collection">
+        <div className="title">
+          <h3>ALBUM</h3>
+          <h3>YEAR</h3>
+        </div>
         {albums.map((album) => {
           return (
             <article onClick={handleClick} key={album._id}>
               <h3>{album.name}</h3>
+              <h3>{album.year}</h3>
+              <button type="submit" className="favorite">
+                EDIT
+              </button>
+              <button type="submit" className="favorite">
+                DELETE
+              </button>
             </article>
           );
         })}
@@ -44,6 +58,7 @@ const Collection = () => {
         </> 
         }
       </section>
+      <div className="right"></div>
     </main>
   );
 };
