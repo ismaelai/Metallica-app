@@ -6,8 +6,8 @@ const Home = () => {
   const [albums, setAlbums] = useState([]);
 
   const fetchAllAlbums = async () => {
-    const allbumsData = await getAllAlbums();
-    setAlbums(allbumsData);
+    const albumsData = await getAllAlbums();
+    setAlbums(albumsData);
   };
 
   useEffect(() => {
@@ -16,15 +16,13 @@ const Home = () => {
 
   return (
     <>
-      <main className="container home">
+      <main className="container-home">
         <div className="left">
           <h4>CHOOSE ALBUMS TO START YOUR FAVOURITE COLLECTION:</h4>
         </div>
-
-        <section>
+        <div className="wrapper-album">
           <AlbumContainer albums={albums} />
-        </section>
-
+        </div>
         <div className="right">
           <h4>GO TO COLLECTION</h4>
           <a href="/collection" className="go">
@@ -35,5 +33,9 @@ const Home = () => {
     </>
   );
 };
+<<<<<<< HEAD
 export default Home;
 
+=======
+export default Home;
+>>>>>>> 100ccc70eff5788f4045d062e416af38849e4f0b

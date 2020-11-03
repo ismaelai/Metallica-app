@@ -6,9 +6,10 @@
   "author": "Ismael Gonzalez <ismamontiel@hotmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "yarn nodemon ./index.js",
+    "dev": "yarn nodemon ./index.js",
     "seedPlaylist": "node ./data/playlist-seeds.js",
-    "seedAlbums": "node ./data/albums-seeds.js"
+    "seedAlbums": "node ./data/albums-seeds.js",
+    "start": "node ./index.js"
   },
   "type": "module",
   "dependencies": {

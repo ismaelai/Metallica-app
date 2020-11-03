@@ -1,12 +1,23 @@
 .error {
-  min-height: 80vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   flex: 1 auto;
   padding: 0 1.25rem;
-  animation: flash 1s infinite alternate linear;
+  background-color: black;
+  h2 {
+    color: orange;
+    font-size: 4rem;
+    font-weight: normal;
+    font-family: 'Oswald', sans-serif;
+    margin-left: 2rem;
   }
-@keyframes flash {
-  to {
-    background-color: red;
-    color: white;
+   h3 {
+    font-size: 2rem;
+    font-weight: normal;
+    font-family: 'Oswald', sans-serif;
+    margin-left: 2rem;
   }
-}
+  }

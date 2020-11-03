@@ -1,6 +1,7 @@
     className: 'kill-em-all',
     className: 'ride-the-lightning',
     className: 'master-of-puppets',
+    className: 'and-justice-for-all',
     className: 'metallica',
     className: 'load',
     className: 'reload',

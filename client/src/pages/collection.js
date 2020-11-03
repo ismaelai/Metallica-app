@@ -14,36 +14,55 @@ const Collection = () => {
   };
 
   const handleClick = (event) => {
-    const index = albums.findIndex(x => x.name === event.target.innerHTML)
-    console.log(index)
-    setAlbumToRender(index)
-    setisClicked(true)
-    console.log(albumToRenderIndex)
-  }
+     event.preventDefault();
+     const index = albums.findIndex((x) => x.name === event.target.innerHTML);
+     setAlbumToRender(index);
+     setisClicked(true);
+   };
 
   useEffect(() => {
     fetchAlbums();
   }, []);
 
   return (
-    <main className="collection">
-      <h2>Collection page</h2>
-
-      <section>
+    <main className="container-collection">
+      <div className="left">
+        <h3>USER:</h3>
+        <h4>Username</h4>
+      </div>
+      <section className="wrapper-collection">
+        <div className="title">
+          <h3>ALBUM</h3>
+          <h3>YEAR</h3>
+        </div>
         {albums.map((album) => {
           return (
-            <article onClick={handleClick} key={album._id}>
+            <article
+              key={album._id}
+              onClick={handleClick}
+              className="album-row"
+            >
               <h3>{album.name}</h3>
+              <h3>{album.year}</h3>
+              <button type="submit" className="favorite">
+                EDIT
+              </button>
+              <button type="submit" className="favorite">
+                DELETE
+              </button>
             </article>
           );
         })}
-        {isClicked &&
-        <>
-          <h1>{albums[albumToRenderIndex].name}</h1>
-          <h2>{albums[albumToRenderIndex].year}</h2>
-        </> 
-        }
+        {isClicked && (
+          <section className="wrapper-album">
+            <div className={albums[albumToRenderIndex].className}></div>
+            <h1>{albums[albumToRenderIndex].name}</h1>
+            <h2>{albums[albumToRenderIndex].year}</h2>
+            <h2>{albums[albumToRenderIndex].bandMembers}</h2>
+          </section>
+        )}
       </section>
+      <div className="right"></div>
     </main>
   );
 };
