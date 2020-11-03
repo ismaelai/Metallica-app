@@ -17,10 +17,7 @@ function App() {
       <BrowserRouter>
         <Header />
         <Switch>
-          <Route exact path="/home" component={Home} />
-          {/*  <Route path="/collection/new" component={NewStudent} />
-          <Route path="/collection/:id/edit" component={EditStudent} />
-          <Route path="/collection/:id" component={ShowStudent} /> */}
+          <Route exact path="/" component={Home} />
           <Route path="/collection" component={Collection} />
           <Route path="/playlist" component={Playlist} />
           <Route path="/*" component={ErrorPage} />
