@@ -33,4 +33,9 @@ const Home = () => {
     </>
   );
 };
+<<<<<<< HEAD
 export default Home;
+
+=======
+export default Home;
+>>>>>>> 100ccc70eff5788f4045d062e416af38849e4f0b

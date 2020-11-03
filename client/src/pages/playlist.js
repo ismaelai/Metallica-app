@@ -1,3 +1,34 @@
+<<<<<<< HEAD
+import React, { useEffect, useState } from 'react';
+import { useLocalStorage } from '../lib/local-storage-hook.js';
+import { getTracksByIds } from '../lib/fetch-tracks.js';
+
+
+const Playlist = () => {
+  const [playlist, setPlaylist] = useLocalStorage('userCollection', []);
+  const [favorites, setFavorites] = useState([]);
+
+  const fetchTracks = async () => {
+    const tracksData = await getTracksByIds(playlist);
+    setPlaylist(tracksData);
+    console.log({ tracksData });
+  };
+
+  useEffect(() => {
+    fetchTracks();
+  }, []);
+
+
+  return (
+    <main className="playlist">
+      <h2>Playlist page</h2>
+
+      <section>
+        {favorites.map((track) => {
+          return (
+            <article key={track._id}>
+              <h3>{track.title}</h3>
+=======
 import React, { useState, useEffect } from 'react';
 import { getAlbumsByIds } from '../lib/fetch-albums.js';
 import { useLocalStorage } from '../lib/local-storage-hook.js';
@@ -53,11 +84,15 @@ import { useLocalStorage } from '../lib/local-storage-hook.js';
               <button type="submit" className="favorite">
                 DELETE
               </button>
+>>>>>>> 100ccc70eff5788f4045d062e416af38849e4f0b
             </article>
           );
         })}
       </section>
+<<<<<<< HEAD
+=======
       <div className="right"></div>
+>>>>>>> 100ccc70eff5788f4045d062e416af38849e4f0b
     </main>
   );
 };
