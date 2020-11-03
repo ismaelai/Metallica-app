@@ -98,5 +98,15 @@
                 }
               }
           }
+        .wrapper-album {
+          display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: 80vw;
+        background-color: rgba(199, 144, 34, 0.555);
+        border-radius: 0.5rem;
+        padding: 2rem 1rem;
+        } 
       }
 }

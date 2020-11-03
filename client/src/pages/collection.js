@@ -54,10 +54,12 @@ const Collection = () => {
           );
         })}
         {isClicked && (
-          <>
+          <section className="wrapper-album">
+            <div className={albums[albumToRenderIndex].className}></div>
             <h1>{albums[albumToRenderIndex].name}</h1>
             <h2>{albums[albumToRenderIndex].year}</h2>
-          </>
+            <h2>{albums[albumToRenderIndex].bandMembers}</h2>
+          </section>
         )}
       </section>
       <div className="right"></div>

@@ -19,7 +19,7 @@ const AlbumContainer = ({ albums }) => {
         return (
           <article key={album._id} className="album">
             <button onClick={handleClick} id={album._id} className="favorite">
-              Add Collections
+              ADD TO COLLECTION
             </button>
             <div className={album.className}></div>
             <h4>{album.name}</h4>
