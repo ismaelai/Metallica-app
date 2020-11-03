@@ -49,7 +49,7 @@ server.use(playlistRouter);
 server.use(errorHandlerMiddleware);
 
 // Inicializa el servidor
-server.listen(PORT, () =>
+server.listen(process.env.PORT, () =>
   // utilizando el logger de la libreria winston imprimo en consola que el servidor se ha iniciado
   logger.info(`server listening ${JSON.stringify({ HOST, PORT })}`),
 );
