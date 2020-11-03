@@ -15,7 +15,7 @@ const albums = [
         title: 'Hit The Lights',
         album: 'Kill`Em All',
         duration: '4:15',
-        forma: 'mp3',
+        format: 'mp3',
         preview: {
           soundCloudPlayer:
             'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/178713757&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
@@ -29,7 +29,7 @@ const albums = [
         title: 'The Four Horsemen',
         album: 'Kill`Em All',
         duration: '7:12',
-        forma: 'mp3',
+        format: 'mp3',
         preview: {
           soundCloudPlayer:
             'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/253730050&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
@@ -42,7 +42,7 @@ const albums = [
         title: 'Motorbreath',
         album: 'Kill`Em All',
         duration: '3:07',
-        forma: 'mp3',
+        format: 'mp3',
         preview: {
           soundCloudPlayer:
             'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/250726392&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
@@ -55,7 +55,7 @@ const albums = [
         title: 'Jump In The Fire',
         album: 'Kill`Em All',
         duration: '4:40',
-        forma: 'mp3',
+        format: 'mp3',
         preview: {
           soundCloudPlayer:
             'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/659247881&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
@@ -68,7 +68,7 @@ const albums = [
         title: 'Pulling Teeth',
         album: 'Kill`Em All',
         duration: '4:14',
-        forma: 'mp3',
+        format: 'mp3',
         preview: {
           soundCloudPlayer:
             'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/455878374&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
@@ -81,7 +81,7 @@ const albums = [
         title: 'Whiplash',
         album: 'Kill`Em All',
         duration: '4:08',
-        forma: 'mp3',
+        format: 'mp3',
         preview: {
           soundCloudPlayer:
             'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/317818254&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
@@ -94,7 +94,7 @@ const albums = [
         title: 'Planthom Lord',
         album: 'Kill`Em All',
         duration: '5:01',
-        forma: 'mp3',
+        format: 'mp3',
         preview: {
           soundCloudPlayer:
             'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/247435358&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
@@ -107,7 +107,7 @@ const albums = [
         title: 'No Remorse',
         album: 'Kill`Em All',
         duration: '6:26',
-        forma: 'mp3',
+        format: 'mp3',
         preview: {
           soundCloudPlayer:
             'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/66510052&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
@@ -120,7 +120,7 @@ const albums = [
         title: 'Seek & Destroy',
         album: 'Kill`Em All',
         duration: '6:54',
-        forma: 'mp3',
+        format: 'mp3',
         preview: {
           soundCloudPlayer:
             'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/89789762&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
@@ -134,7 +134,7 @@ const albums = [
         title: 'Metal Militia',
         album: 'Kill`Em All',
         duration: '5:10',
-        forma: 'mp3',
+        format: 'mp3',
         preview: {
           soundCloudPlayer:
             'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/117366445&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
@@ -161,7 +161,7 @@ const albums = [
         title: 'Fight Fire With Fire',
         album: 'Ride The Lightning',
         duration: '4:44',
-        forma: 'mp3',
+        format: 'mp3',
         preview: {
           soundCloudPlayer:
             'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/187293179&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
@@ -175,7 +175,7 @@ const albums = [
         title: 'Ride The Lightning',
         album: 'Ride The Lightning',
         duration: '6:37',
-        forma: 'mp3',
+        format: 'mp3',
         preview: {
           soundCloudPlayer:
             'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/100284329&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
@@ -188,7 +188,7 @@ const albums = [
         title: 'For Whom The Bell Tolls',
         album: 'Ride The Lightning',
         duration: '5:10',
-        forma: 'mp3',
+        format: 'mp3',
         preview: {
           soundCloudPlayer:
             'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/252817666&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
@@ -201,7 +201,7 @@ const albums = [
         title: 'Fade To Black ',
         album: 'Ride The Lightning',
         duration: '6:57',
-        forma: 'mp3',
+        format: 'mp3',
         preview: {
           soundCloudPlayer:
             'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/101388968&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
@@ -214,7 +214,7 @@ const albums = [
         title: 'Trapped Under Ice',
         album: 'Ride The Lightning',
         duration: '4:04',
-        forma: 'mp3',
+        format: 'mp3',
         preview: {
           soundCloudPlayer:
             'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/11823705&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
@@ -227,7 +227,7 @@ const albums = [
         title: 'Escape',
         album: 'Ride The Lightning',
         duration: '4:23',
-        forma: 'mp3',
+        format: 'mp3',
         preview: {
           soundCloudPlayer:
             'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/145082019&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
@@ -240,7 +240,7 @@ const albums = [
         title: 'Creeping Death',
         album: 'Ride The Lightning',
         duration: '6:35',
-        forma: 'mp3',
+        format: 'mp3',
         preview: {
           soundCloudPlayer:
             'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/253730765&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',
@@ -253,7 +253,7 @@ const albums = [
         title: 'The Call Of Ktulu',
         album: 'Ride The Lightning',
         duration: '8:53',
-        forma: 'mp3',
+        format: 'mp3',
         preview: {
           soundCloudPlayer:
             'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/86443656&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true',

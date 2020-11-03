@@ -1,13 +1,112 @@
-.collection{
-    display: flex;
+.container-collection {
+  display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   min-height: 100vh;
   color: white;
   background-image: url('../assets/backgrounds/blue_flames.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
+    .left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-width: 10vw;
+      background-color: rgba(134, 133, 131, 0.479);
+      border-radius: 0.5rem;
+      padding: 0.25rem;
+      margin-top: 15vh;
+        h3 {
+          color: orange;
+          font-size: 1.25rem;
+          text-align: center;
+          font-weight: normal;
+          font-family: 'Oswald', sans-serif;
+          margin: 0;
+        }
+        h4 {
+          font-size: 1.25rem;
+          text-align: center;
+          font-family: 'Oswald', sans-serif;
+          font-weight: normal;
+          margin: 0;
+          padding: 0.5rem;
+        }
+    }
+    .wrapper-collection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: 80vw;
+        background-color: rgba(134, 133, 131, 0.349);
+        border-radius: 0.5rem;
+        padding: 2rem 1rem;
+        margin-top: 15vh;
+        .title {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          min-width: 53vw;
+          padding:  0 1rem;
+          margin-bottom: 2rem;
+          h3 {
+            min-width: 20vw;
+            font-size: 1rem;
+            font-weight: normal;
+            font-family: 'Oswald', sans-serif;
+            margin: 0;
+          }
+        }
+          .album-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            min-width: 50vw;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 0.5rem;
+            margin-bottom: 1rem;
+            padding:  0 1rem;
+              h3 {
+                min-width: 20vw;
+                font-size: 1rem;
+                font-weight: normal;
+                font-family: 'Oswald', sans-serif;
+              }
+              .favorite {
+                min-width: 5vw;
+                background-color: transparent;
+                color: rgba(255, 255, 255, 0.4);
+                padding: 0.25rem 0.5rem;
+                font-family: 'Oswald', sans-serif;
+                font-weight: normal;
+                border-radius: 0.5rem;
+                border: 1px solid  rgba(255, 255, 255, 0.4);
+                margin-left: 1rem;
+                &:hover {
+                  color: rgba(255, 255, 255, 1);
+                  border: 1px solid  rgba(255, 255, 255, 1);
+                }
+                &:active {
+                  color: rgba(255, 255, 255, 1);
+                  border: 1px solid  rgba(255, 255, 255, 1);
+                  background-color: orange;
+                }
+              }
+          }
+        .wrapper-album {
+          display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: 80vw;
+        background-color: rgba(199, 144, 34, 0.555);
+        border-radius: 0.5rem;
+        padding: 2rem 1rem;
+        } 
+      }
 }

@@ -1,4 +1,4 @@
-.home{
+.container-home{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -62,87 +62,136 @@
                     background-color: orange;
                   }
                 }
-                .pict {
-                  min-width: 12vw;
-                  min-height: 12vw;
-                  padding: 0.25rem;
-                  border-radius: 0.5rem;
-                  &.kill-em-all {
+                  .kill-em-all {
                     background-image: url('../assets/albums/killem_all.png');
                     background-position: center;
                     background-size: cover;
                     background-repeat: no-repeat;
+                    min-width: 12vw;
+                    min-height: 12vw;
+                    padding: 0.25rem;
+                    border-radius: 0.5rem;
                   }
-                  &.ride-the-lightning {
+                  .ride-the-lightning {
                     background-image: url('../assets/albums/ride_lightning.png');
                     background-position: center;
                     background-size: cover;
                     background-repeat: no-repeat;
+                    min-width: 12vw;
+                    min-height: 12vw;
+                    padding: 0.25rem;
+                    border-radius: 0.5rem;
                   }
-                  &.master-of-puppets {
+                  .master-of-puppets {
                     background-image: url('../assets/albums/master.png');
                     background-position: center;
                     background-size: cover;
                     background-repeat: no-repeat;
+                    min-width: 12vw;
+                    min-height: 12vw;
+                    padding: 0.25rem;
+                    border-radius: 0.5rem;
                   }
-                  &.metallica {
+                    .and-justice-for-all {
+                    background-image: url('../assets/albums/justice_x_all.png');
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    min-width: 12vw;
+                    min-height: 12vw;
+                    padding: 0.25rem;
+                    border-radius: 0.5rem;
+                  }
+
+                  .metallica {
                     background-image: url('../assets/albums/black.png');
                     background-position: center;
                     background-size: cover;
                     background-repeat: no-repeat;
+                    min-width: 12vw;
+                    min-height: 12vw;
+                    padding: 0.25rem;
+                    border-radius: 0.5rem;
                   }
-                  &.load {
+                  .load {
                     background-image: url('../assets/albums/load.png');
                     background-position: center;
                     background-size: cover;
                     background-repeat: no-repeat;
+                    min-width: 12vw;
+                    min-height: 12vw;
+                    padding: 0.25rem;
+                    border-radius: 0.5rem;
                   }
-                  &.reload {
+                  .reload {
                     background-image: url('../assets/albums/reload.png');
                     background-position: center;
                     background-size: cover;
                     background-repeat: no-repeat;
+                    min-width: 12vw;
+                    min-height: 12vw;
+                    padding: 0.25rem;
+                    border-radius: 0.5rem;
                   }
-                  &.garage-inc {
+                  .garage-inc {
                     background-image: url('../assets/albums/garage_inc.png');
                     background-position: center;
                     background-size: cover;
-                    background-repeat: no-repeat;
+                    background-repeat: no-repeat;min-width: 12vw;
+                    min-height: 12vw;
+                    padding: 0.25rem;
+                    border-radius: 0.5rem;
                   }
-                  &.s-and-m {
+                  .s-and-m {
                     background-image: url('../assets/albums/s&m.png');
                     background-position: center;
                     background-size: cover;
                     background-repeat: no-repeat;
+                    min-width: 12vw;
+                    min-height: 12vw;
+                    padding: 0.25rem;
+                    border-radius: 0.5rem;
                   }
-                  &.st-anger {
+                  .st-anger {
                     background-image: url('../assets/albums/st_anger.png');
                     background-position: center;
                     background-size: cover;
                     background-repeat: no-repeat;
+                    min-width: 12vw;
+                    min-height: 12vw;
+                    padding: 0.25rem;
+                    border-radius: 0.5rem;
                   }
-                  &.death-magnetic {
+                  .death-magnetic {
                     background-image: url('../assets/albums/death_magnetic.png');
                     background-position: center;
                     background-size: cover;
                     background-repeat: no-repeat;
+                    min-width: 12vw;
+                    min-height: 12vw;
+                    padding: 0.25rem;
+                    border-radius: 0.5rem;
                   }
-                  &.hardwired {
+                  .hardwired {
                     background-image: url('../assets/albums/hardwired.png');
                     background-position: center;
                     background-size: cover;
                     background-repeat: no-repeat;
+                    min-width: 12vw;
+                    min-height: 12vw;
+                    padding: 0.25rem;
+                    border-radius: 0.5rem;
                   }
-                }
-                    h5 {
+                  h4 {
                       padding: 0;
                       margin: 0;
                       margin-top: 0.5rem;
                       font-family: 'Oswald', sans-serif;
                       font-weight: 300;
+                      
                       }
           }
-            }
+        }
       .right {
                     width: 15vw;
                     min-height: 10vh;
