@@ -1181,7 +1181,7 @@ const albums = [
   },
   //objeto S&M
   {
-    name: 'S&M',
+    name: 'S and M',
     year: 1999,
     bandMembers: [
       'James Hetfield – Guitar Vocals - Rhythm Guitar',

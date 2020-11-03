@@ -16,6 +16,7 @@ const Collection = () => {
   const handleClick = (event) => {
      event.preventDefault();
      const index = albums.findIndex((x) => x.name === event.target.innerHTML);
+     if (index === -1) return null
      setAlbumToRender(index);
      setisClicked(true);
    };
@@ -41,9 +42,10 @@ const Collection = () => {
               key={album._id}
               onClick={handleClick}
               className="album-row"
+              value={album.name}
             >
-              <h3>{album.name}</h3>
-              <h3>{album.year}</h3>
+              <h3 value={album.name}>{album.name}</h3>
+              <h3 value={album.name}>{album.year}</h3>
               <button type="submit" className="favorite">
                 EDIT
               </button>
@@ -59,6 +61,16 @@ const Collection = () => {
             <h1>{albums[albumToRenderIndex].name}</h1>
             <h2>{albums[albumToRenderIndex].year}</h2>
             <h2>{albums[albumToRenderIndex].bandMembers}</h2>
+            <div className="wrapper-track">
+              {albums[albumToRenderIndex].tracks.map((track) => {
+                return (
+                  <>
+                <h2>{track.title}</h2>
+                <h2>{track.duration}</h2>
+                </>
+                )
+              })}
+            </div>
           </section>
         )}
       </section>
