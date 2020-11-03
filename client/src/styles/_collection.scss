@@ -107,6 +107,16 @@
         background-color: rgba(199, 144, 34, 0.555);
         border-radius: 0.5rem;
         padding: 2rem 1rem;
+        .kill-em-all {
+          background-image: url('../assets/albums/killem_all.png');
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          min-width: 12vw;
+          min-height: 12vw;
+          padding: 0.25rem;
+          border-radius: 0.5rem;
+        }
         } 
       }
 }

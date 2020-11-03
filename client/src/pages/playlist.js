@@ -5,8 +5,6 @@ import { useLocalStorage } from '../lib/local-storage-hook.js';
   const Playlist = () => {
   const [collection, _setCollection] = useLocalStorage('userCollection', []);
   const [albums, setAlbums] = useState([]);
-  const [isClicked, setisClicked] = useState(false);
-  const [albumToRenderIndex, setAlbumToRender] = useState(-1);
 
   const fetchAlbums = async () => {
     const albumsData = await getAlbumsByIds(collection);
@@ -16,8 +14,7 @@ import { useLocalStorage } from '../lib/local-storage-hook.js';
   const handleClick = (event) => {
      event.preventDefault();
      const index = albums.findIndex((x) => x.name === event.target.innerHTML);
-     setAlbumToRender(index);
-     setisClicked(true);
+     console.log(index)
    };
 
   useEffect(() => {
