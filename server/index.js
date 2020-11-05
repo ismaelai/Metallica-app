@@ -18,10 +18,9 @@ import playlistRouter from './routes/playlist-routes.js';
 
 
 
-const HOST = process.env.HOST || '127.0.0.1';
-const PORT = process.env.PORT || 5000;
-export const databaseURI =
-  process.env.DATA_BASE_URI || 'mongodb://localhost/metallica-MERN';
+const HOST = '127.0.0.1';
+const PORT = 5000;
+export const databaseURI = 'mongodb://localhost/metallica-MERN';
 // const databaseURI = 'mongodb://localhost:2700/mongoose-intro
 
 // Creacion del servidor
@@ -49,7 +48,7 @@ server.use(playlistRouter);
 server.use(errorHandlerMiddleware);
 
 // Inicializa el servidor
-server.listen(process.env.PORT, () =>
+server.listen(PORT, () =>
   // utilizando el logger de la libreria winston imprimo en consola que el servidor se ha iniciado
   logger.info(`server listening ${JSON.stringify({ HOST, PORT })}`),
 );

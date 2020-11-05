@@ -19,7 +19,6 @@ const Header = () => {
           <img src={logo} alt="logo" className="logo" />
         </h1>
       </Link>
-      <h1></h1>
       <nav>
         <ul>
           <li>
