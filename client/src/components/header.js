@@ -14,7 +14,7 @@ const imageName = 'logo_silver.png';
 const Header = () => {
   return (
     <header>
-      <Link to="/home">
+      <Link to="/">
         <h1>
           <img src={logo} alt="logo" className="logo" />
         </h1>
